@@ -13,7 +13,7 @@ func main() {
 	var digitOption = flag.Int("d", -1, "set digit of password.")
 	flag.Parse()
 
-	fmt.Printf("digit: %d\n", *digitOption)
+	//fmt.Printf("digit: %d\n", *digitOption)
 	if *digitOption == -1 {
 		fmt.Println(os.Args[0], "-d <digit>")
 		return
