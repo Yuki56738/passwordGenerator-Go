@@ -4,11 +4,9 @@ import (
 	"flag"
 	"fmt"
 	"math/rand"
+	"os"
 	"time"
 )
-
-//TIP To run your code, right-click the code and select <b>Run</b>. Alternatively, click
-// the <icon src="AllIcons.Actions.Execute"/> icon in the gutter and select the <b>Run</b> menu item from here.
 
 func main() {
 	// 第一引数の桁数のパスワードを生成したい
@@ -17,6 +15,7 @@ func main() {
 
 	fmt.Printf("digit: %d\n", *digitOption)
 	if *digitOption == -1 {
+		fmt.Println(os.Args[0], "-d <digit>")
 		return
 	}
 	const NUM = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
@@ -32,6 +31,3 @@ func main() {
 
 	//fmt.Printf("%s", string(NUM[rand.Intn(len(NUM))]))
 }
-
-//TIP See GoLand help at <a href="https://www.jetbrains.com/help/go/">jetbrains.com/help/go/</a>.
-// Also, you can try interactive lessons for GoLand by selecting 'Help | Learn IDE Features' from the main menu.
