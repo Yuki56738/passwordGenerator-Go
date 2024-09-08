@@ -19,7 +19,7 @@ func main() {
 	if *digitOption == -1 {
 		return
 	}
-	const NUM = "abcdefghijklmnopqrstuvwxyz0123456789"
+	const NUM = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 	//for i = 0; i < len(NUM); i++ {
 	//	//fmt.Println(string(NUM[i]))
 	//}
